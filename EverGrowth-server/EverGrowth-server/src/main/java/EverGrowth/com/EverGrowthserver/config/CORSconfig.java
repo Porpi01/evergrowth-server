@@ -14,7 +14,7 @@ public WebMvcConfigurer corsConfigurer() {
         @Override
         public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/media/**")
-            .allowedOrigins("*")
+            .allowedOrigins("https://evergrowth.netlify.app")
             .allowedMethods("*");
         }
     };
