@@ -71,7 +71,7 @@ public class CategoriaService {
 
             CategoriaEntity categoria = new CategoriaEntity();
             categoria.setNombre(DataGenerationHelper.getRandomCategoria());
-            categoria.setImagen("http://localhost:8085/media/default.jpg");
+            categoria.setImagen("https://evergrowth-server-2.onrender.com/media/default.jpg");
             categoriaRepository.save(categoria);
 
         }
