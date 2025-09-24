@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiamos el .jar desde tu proyecto local
-COPY /target/EverGrowth-server-0.0.1-SNAPSHOT.jar app.jar
+COPY EverGrowth-server/EverGrowth-server/target/EverGrowth-server-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponemos el puerto (Render asigna uno dinámico)
 EXPOSE 8080
