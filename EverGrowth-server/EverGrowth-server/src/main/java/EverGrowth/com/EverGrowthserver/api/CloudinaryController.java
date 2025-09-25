@@ -16,7 +16,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/media/cloudinary")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*", maxAge = 3600)
 public class CloudinaryController {
 
     private final CloudinaryService cloudinaryService;
@@ -30,4 +30,6 @@ public class CloudinaryController {
             return ResponseEntity.status(500).body(Map.of("error", e.getMessage()));
         }
     }
+
+
 }
