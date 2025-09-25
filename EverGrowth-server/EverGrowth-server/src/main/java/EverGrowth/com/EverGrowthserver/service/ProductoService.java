@@ -103,7 +103,7 @@ public class ProductoService {
                 producto.setprecio(DataGenerationHelper.generateRandomPrecio()); 
                 producto.setIva(0);
                 producto.setDescripcion("Nuevo producto creado por el sistema");
-                producto.setImagen( "https://evergrowth-server-2.onrender.com/media/default.jpg");
+                producto.setImagen( "https://res.cloudinary.com/dtunlhsqn/image/upload/v1758785416/sqzhk65okx4snxyflwfi.jpg");
                 productoRepository.save(producto);
             
             } return productoRepository.count();
